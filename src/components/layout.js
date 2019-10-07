@@ -20,5 +20,10 @@ export default ({ children }) => (
       </ul>
     </header>
     {children}
+    <footer
+      style={{ position: "sticky", bottom: 0, background: "purple", margin: 0 }}
+    >
+      <p>© 2019 Morgan Lockhart</p>
+    </footer>
   </div>
 )
