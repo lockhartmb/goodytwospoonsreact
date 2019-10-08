@@ -1,10 +1,12 @@
 import React from "react"
+import Navigation from "../components/navigation"
+import styles from "./header.module.css"
 
 export default () => {
   return (
-    <header>
+    <header className={styles.header}>
       <div className="wrapper">
-        <h1>hello</h1>
+        <Navigation />
       </div>
     </header>
   )

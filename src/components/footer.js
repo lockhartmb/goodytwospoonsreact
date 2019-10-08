@@ -4,7 +4,7 @@ export default () => {
   return (
     <footer>
       <div className="wrapper">
-        <p>this is the footer</p>
+        <p>© 2019 Morgan Lockhart</p>
       </div>
     </footer>
   )

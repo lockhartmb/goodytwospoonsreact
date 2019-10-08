@@ -1,11 +1,39 @@
+/* TYPOGRAPHY */
+
+@import url("https://fonts.googleapis.com/css?family=Lily+Script+One");
+@import url("https://fonts.googleapis.com/css?family=Old+Standard+TT:400,400italic,700");
+
+:root {
+	--main-font-color: #664345;
+	--secondary-font-color: #ffffff;
+	--accent-font-color: #ed3d5b;
+	--primary-background-color: #7f7a7a;
+	--secondary-background-color: #674343;
+}
+
+.accentWord {
+	color: var(--accent-font-color);
+}
+
+h2 {
+	text-align: center;
+	text-transform: capitalize;
+}
+
+/* GLOBAL STYLES */
+
 html {
-	background: lavender;
+	background: url("../images/back.png");
+	color: var(--main-font-color);
+	font-family: "Lily Script One", cursive;
+	font-size: 125%;
 }
 
 .wrapper {
 	width: 75%;
 	max-width: 650px;
 	margin: 0 auto;
+	height: 100%;
 }
 
 * {

@@ -1,14 +1,16 @@
 import React from "react"
-import Header from "../components/header"
-import Main from "../components/main"
-import Footer from "../components/footer"
+import Layout from "../components/layout"
 
 export default () => {
   return (
-    <>
-      <Header />
-      <Main />
-      <Footer />
-    </>
+    <Layout>
+      <h2>This is the home page</h2>
+      <p>
+        yo yo Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
+        reiciendis sequi maiores aperiam! Facilis ad beatae ratione vitae
+        exercitationem assumenda dolore tempora aspernatur porro inventore.
+        Libero odit illo eius veniam!
+      </p>
+    </Layout>
   )
 }

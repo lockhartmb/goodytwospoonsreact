@@ -1,0 +1,33 @@
+.navigation {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.navigationList {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	padding: 30px 40px;
+	background-color: white;
+	list-style: none;
+}
+
+.navigationLink {
+	text-decoration: none;
+	color: var(--main-font-color);
+}
+
+.navigationLink:hover {
+	color: var(--accent-font-color);
+}
+
+.logo {
+	font-size: 1.5rem;
+}
+
+.active {
+	color: var(--accent-font-color);
+}
