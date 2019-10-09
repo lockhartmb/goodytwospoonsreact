@@ -1,0 +1,23 @@
+.about {
+	text-align: center;
+}
+
+.ourHistory {
+	background: var(--secondary-background-color);
+	color: var(--secondary-font-color);
+}
+
+.about section {
+	padding: 100px 0;
+}
+
+.quote {
+	background: var(--primary-background-color);
+	color: var(--secondary-font-color);
+}
+
+.socialMedia {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
