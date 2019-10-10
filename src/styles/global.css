@@ -18,8 +18,26 @@
 h2 {
 	text-align: center;
 	text-transform: capitalize;
+	font-size: 3rem;
+	position: relative;
+	margin-bottom: 50px;
 }
 
+h2:after {
+	content: "";
+	position: absolute;
+	height: 10px;
+	width: 50px;
+	background-color: var(--main-font-color);
+	top: 100%;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+p {
+	margin-bottom: 20px;
+	line-height: 1.6;
+}
 /* GLOBAL STYLES */
 
 html {
@@ -39,4 +57,15 @@ html {
 * {
 	margin: 0;
 	padding: 0;
+}
+
+.circle {
+	width: 160px;
+	height: 160px;
+	background: var(--secondary-font-color);
+	border-radius: 50%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
 }

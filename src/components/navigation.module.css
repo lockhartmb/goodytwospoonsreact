@@ -3,6 +3,33 @@
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+	position: relative;
+}
+
+.navigation:before {
+	content: "";
+	height: 0;
+	width: 0;
+	position: absolute;
+	top: 42%;
+	left: -70px;
+	background: white;
+	border: 50px solid white;
+	border-left: 50px solid var(--primary-background-color);
+	border-bottom-right-radius: 7px;
+}
+
+.navigation:after {
+	content: "";
+	height: 0;
+	width: 0;
+	position: absolute;
+	top: 42%;
+	right: -70px;
+	background: white;
+	border: 50px solid white;
+	border-right: 50px solid var(--primary-background-color);
+	border-bottom-left-radius: 7px;
 }
 
 .navigationList {
@@ -13,6 +40,8 @@
 	padding: 30px 40px;
 	background-color: white;
 	list-style: none;
+	border: 2px solid var(--primary-background-color);
+	z-index: 9;
 }
 
 .navigationLink {

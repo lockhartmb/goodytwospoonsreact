@@ -1,6 +1,7 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { Link } from "gatsby"
+import Squiggle from "../components/squiggle"
 import styles from "./navigation.module.css"
 
 const ListLink = props => (
@@ -18,6 +19,8 @@ const ListLink = props => (
 const Navigation = () => {
   return (
     <nav className={styles.navigation}>
+      {/* <Squiggle /> */}
+      {/* <div className="circle"></div> */}
       <ul className={styles.navigationList}>
         <ListLink to="/">Home</ListLink>
         <ListLink to="/about/">About</ListLink>
