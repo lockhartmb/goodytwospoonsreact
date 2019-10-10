@@ -18,9 +18,11 @@
 
 h1 {
 	margin: 10px 0;
+	letter-spacing: 2px;
 }
 
 h2 {
+	letter-spacing: 2px;
 	text-transform: capitalize;
 	font-size: 3rem;
 	position: relative;
@@ -38,7 +40,7 @@ h2:after {
 	transform: translateX(-50%);
 }
 
-h3 {
+h4 {
 	margin: 20px 0;
 }
 
@@ -74,8 +76,14 @@ html {
 	border-radius: 10px;
 	text-decoration: none;
 	text-transform: lowercase;
+	transition: transform 0.25s ease-in-out;
+	display: inline-block;
 }
 
 .headerLink {
 	background: var(--accent-font-color);
+}
+
+.link:hover {
+	transform: scale(1.1);
 }

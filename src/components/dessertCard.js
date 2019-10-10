@@ -7,7 +7,7 @@ const DessertCard = ({ image, subhead, caption }) => {
     <div className={styles.dessertCard}>
       {/* <img src={image} alt="some dessert" /> */}
       <div className={styles.image}></div>
-      <h3>{subhead}</h3>
+      <h4>{subhead}</h4>
       <p>{caption}</p>
     </div>
   )

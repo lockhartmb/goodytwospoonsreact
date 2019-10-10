@@ -3,6 +3,7 @@
 	flex-direction: column;
 	justify-content: center;
 	position: relative;
+	margin-bottom: 50px;
 }
 
 .navigation:before,

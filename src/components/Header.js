@@ -11,8 +11,11 @@ const Header = ({ homePage }) => {
         <Navigation />
         {homePage && (
           <>
-            <h1 className={styles.homePageHeader}>Taste our amazing cakes</h1>
-            <Link className="link headerLink">View our delicious products</Link>
+            <p>Welcome to Goody Two Spoons</p>
+            <p className={styles.homePageHeader}>Taste our amazing cakes</p>
+            <Link to="/menu" className="link headerLink">
+              View our delicious products
+            </Link>
           </>
         )}
       </div>
