@@ -9,14 +9,18 @@
 	--accent-font-color: #ed3d5b;
 	--primary-background-color: #7f7a7a;
 	--secondary-background-color: #674343;
+	--header-background-color: #c5c3c3;
 }
 
 .accentWord {
 	color: var(--accent-font-color);
 }
 
+h1 {
+	margin: 10px 0;
+}
+
 h2 {
-	text-align: center;
 	text-transform: capitalize;
 	font-size: 3rem;
 	position: relative;
@@ -29,9 +33,13 @@ h2:after {
 	height: 10px;
 	width: 50px;
 	background-color: var(--main-font-color);
-	top: 100%;
+	top: 120%;
 	left: 50%;
 	transform: translateX(-50%);
+}
+
+h3 {
+	margin: 20px 0;
 }
 
 p {
@@ -45,13 +53,13 @@ html {
 	color: var(--main-font-color);
 	font-family: "Lily Script One", cursive;
 	font-size: 125%;
+	text-align: center;
 }
 
 .wrapper {
 	width: 75%;
-	max-width: 650px;
+	max-width: 750px;
 	margin: 0 auto;
-	height: 100%;
 }
 
 * {
@@ -59,13 +67,15 @@ html {
 	padding: 0;
 }
 
-.circle {
-	width: 160px;
-	height: 160px;
-	background: var(--secondary-font-color);
-	border-radius: 50%;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
+.link {
+	background: var(--main-font-color);
+	color: var(--secondary-font-color);
+	padding: 15px;
+	border-radius: 10px;
+	text-decoration: none;
+	text-transform: lowercase;
+}
+
+.headerLink {
+	background: var(--accent-font-color);
 }

@@ -1,33 +1,29 @@
 .navigation {
-	height: 100%;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	position: relative;
 }
 
-.navigation:before {
-	content: "";
-	height: 0;
-	width: 0;
-	position: absolute;
-	top: 42%;
-	left: -70px;
-	background: white;
-	border: 50px solid white;
-	border-left: 50px solid var(--primary-background-color);
-	border-bottom-right-radius: 7px;
-}
-
+.navigation:before,
 .navigation:after {
 	content: "";
 	height: 0;
 	width: 0;
 	position: absolute;
 	top: 42%;
-	right: -70px;
 	background: white;
 	border: 50px solid white;
+}
+
+.navigation:before {
+	left: -70px;
+	border-left: 50px solid var(--primary-background-color);
+	border-bottom-right-radius: 7px;
+}
+
+.navigation:after {
+	right: -70px;
 	border-right: 50px solid var(--primary-background-color);
 	border-bottom-left-radius: 7px;
 }
