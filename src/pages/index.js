@@ -37,6 +37,7 @@ const Home = () => {
           View our products
         </Link>
       </Section>
+      <Section></Section>
       <Section title={<>Services</>}>
         <p>Check out some of the custom services I offer.</p>
         <div className={styles.menuCaroussel}>

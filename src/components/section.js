@@ -7,7 +7,7 @@ const Section = ({ title, children, className }) => {
   return (
     <section className={styles.section}>
       <div className="wrapper">
-        <h2>{title}</h2>
+        {title && <h2>{title}</h2>}
         {children}
       </div>
     </section>

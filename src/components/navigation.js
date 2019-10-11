@@ -1,6 +1,7 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { Link } from "gatsby"
+import Shape from "./shape.js"
 import styles from "./navigation.module.css"
 
 const ListLink = ({ to, children }) => (
@@ -17,21 +18,25 @@ const ListLink = ({ to, children }) => (
 
 const Navigation = ({ homePage }) => {
   return (
-    <nav
-      className={`${styles.navigation} {${homePage} && ${styles.homeNavigation}`}
-    >
-      <ul className={styles.navigationList}>
-        <ListLink to="/">Home</ListLink>
-        <ListLink to="/about">About</ListLink>
-        <li>
-          <Link className={`${styles.logo} ${styles.navigationLink}`} to="/">
-            <h1>GoodyTwoSpoons</h1>
-          </Link>
-        </li>
-        <ListLink to="/menu">Menu</ListLink>
-        <ListLink to="/contact">Contact</ListLink>
-      </ul>
-    </nav>
+    <div className={styles.flexbox}>
+      <Shape />
+      <nav
+        className={`${styles.navigation} {${homePage} && ${styles.homeNavigation}`}
+      >
+        <ul className={styles.navigationList}>
+          <ListLink to="/">Home</ListLink>
+          <ListLink to="/about">About</ListLink>
+          <li>
+            <Link className={`${styles.logo} ${styles.navigationLink}`} to="/">
+              <h1>GoodyTwoSpoons</h1>
+            </Link>
+          </li>
+          <ListLink to="/menu">Menu</ListLink>
+          <ListLink to="/contact">Contact</ListLink>
+        </ul>
+      </nav>
+      <Shape />
+    </div>
   )
 }
 
