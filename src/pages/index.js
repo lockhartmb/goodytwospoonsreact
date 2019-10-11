@@ -33,9 +33,26 @@ const Home = () => {
             caption="Custom cake orders for weddings, birthdays, and showers."
           />
         </div>
-        <Link to="/menu" className="link">
+        <Link to="/menu" className="link" activeClassName="active">
           View our products
         </Link>
+      </Section>
+      <Section title={<>Services</>}>
+        <p>Check out some of the custom services I offer.</p>
+        <div className={styles.menuCaroussel}>
+          <DessertCard
+            subhead="Custom mix and match cupcakes"
+            caption="Cupcakes come in a variety of flavours and sizes."
+          />
+          <DessertCard
+            subhead="Delivery to any point"
+            caption="Cupcakes come in a variety of flavours and sizes."
+          />
+          <DessertCard
+            subhead="Individual solutions"
+            caption="Cupcakes come in a variety of flavours and sizes."
+          />
+        </div>
       </Section>
       <div className="wrapper">
         <h2>This is the home page</h2>

@@ -19,6 +19,7 @@
 h1 {
 	margin: 10px 0;
 	letter-spacing: 2px;
+	font-size: 1.8rem;
 }
 
 h2 {
@@ -40,8 +41,9 @@ h2:after {
 	transform: translateX(-50%);
 }
 
-h4 {
+h3 {
 	margin: 20px 0;
+	font-size: 1.5rem;
 }
 
 p {
@@ -86,4 +88,8 @@ html {
 
 .link:hover {
 	transform: scale(1.1);
+}
+
+.active {
+	color: var(--accent-font-color);
 }

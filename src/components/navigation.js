@@ -3,14 +3,14 @@ import PropTypes from "prop-types"
 import { Link } from "gatsby"
 import styles from "./navigation.module.css"
 
-const ListLink = props => (
+const ListLink = ({ to, children }) => (
   <li>
     <Link
-      to={props.to}
+      to={to}
       activeClassName={styles.active}
       className={styles.navigationLink}
     >
-      {props.children}
+      {children}
     </Link>
   </li>
 )
@@ -22,14 +22,14 @@ const Navigation = ({ homePage }) => {
     >
       <ul className={styles.navigationList}>
         <ListLink to="/">Home</ListLink>
-        <ListLink to="/about/">About</ListLink>
+        <ListLink to="/about">About</ListLink>
         <li>
           <Link className={`${styles.logo} ${styles.navigationLink}`} to="/">
-            GoodyTwoSpoons
+            <h1>GoodyTwoSpoons</h1>
           </Link>
         </li>
-        <ListLink to="/menu/">Menu</ListLink>
-        <ListLink to="/contact/">Contact</ListLink>
+        <ListLink to="/menu">Menu</ListLink>
+        <ListLink to="/contact">Contact</ListLink>
       </ul>
     </nav>
   )

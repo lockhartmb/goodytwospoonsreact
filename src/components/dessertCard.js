@@ -7,8 +7,10 @@ const DessertCard = ({ image, subhead, caption }) => {
     <div className={styles.dessertCard}>
       {/* <img src={image} alt="some dessert" /> */}
       <div className={styles.image}></div>
-      <h4>{subhead}</h4>
-      <p>{caption}</p>
+      <div className={styles.dessertCardContent}>
+        <h3>{subhead}</h3>
+        <p>{caption}</p>
+      </div>
     </div>
   )
 }

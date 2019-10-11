@@ -13,7 +13,11 @@ const Header = ({ homePage }) => {
           <>
             <p>Welcome to Goody Two Spoons</p>
             <p className={styles.homePageHeader}>Taste our amazing cakes</p>
-            <Link to="/menu" className="link headerLink">
+            <Link
+              to="/menu"
+              className="link headerLink"
+              activeClassName="active"
+            >
               View our delicious products
             </Link>
           </>
