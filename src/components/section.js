@@ -2,10 +2,12 @@ import React from "react"
 import PropTypes from "prop-types"
 import styles from "./section.module.css"
 
-const Section = ({ title, children, className }) => {
-  console.log(className)
+const Section = ({ title, children, backgroundColor }) => {
   return (
-    <section className={styles.section}>
+    <section
+      className={styles.section}
+      style={{ backgroundColor: backgroundColor }}
+    >
       <div className="wrapper">
         {title && <h2>{title}</h2>}
         {children}
@@ -17,7 +19,7 @@ const Section = ({ title, children, className }) => {
 Section.propTypes = {
   title: PropTypes.shape(),
   children: PropTypes.arrayOf(PropTypes.shape()).isRequired,
-  className: PropTypes.string,
+  backgroundColor: PropTypes.string,
   styles: PropTypes.shape(),
 }
 

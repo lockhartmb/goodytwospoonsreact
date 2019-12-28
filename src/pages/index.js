@@ -37,7 +37,7 @@ const Home = () => {
           View our products
         </Link>
       </Section>
-      <Section></Section>
+      <Section backgroundColor="darkBrown"></Section>
       <Section title={<>Services</>}>
         <p>Check out some of the custom services I offer.</p>
         <div className={styles.menuCaroussel}>
@@ -55,15 +55,6 @@ const Home = () => {
           />
         </div>
       </Section>
-      <div className="wrapper">
-        <h2>This is the home page</h2>
-        <p>
-          yo yo Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
-          reiciendis sequi maiores aperiam! Facilis ad beatae ratione vitae
-          exercitationem assumenda dolore tempora aspernatur porro inventore.
-          Libero odit illo eius veniam!
-        </p>
-      </div>
     </Layout>
   )
 }

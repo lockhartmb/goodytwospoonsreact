@@ -1,11 +1,13 @@
 import React from "react"
 
-export default () => {
+const Footer = () => {
   return (
     <footer>
       <div className="wrapper">
-        <p>© 2019 Morgan Lockhart</p>
+        <p>© 2019 Goody Two Spoons</p>
       </div>
     </footer>
   )
 }
+
+export default Footer

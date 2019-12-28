@@ -4,12 +4,12 @@
 @import url("https://fonts.googleapis.com/css?family=Old+Standard+TT:400,400italic,700");
 
 :root {
-	--main-font-color: #664345;
+	--main-font-color: #6c464f;
 	--secondary-font-color: #ffffff;
-	--accent-font-color: #ed3d5b;
-	--primary-background-color: #7f7a7a;
+	--accent-font-color: #ec058e;
+	--primary-background-color: #88a7ef;
 	--secondary-background-color: #674343;
-	--header-background-color: #c5c3c3;
+	--header-background-color: #88a7ef;
 }
 
 .accentWord {
